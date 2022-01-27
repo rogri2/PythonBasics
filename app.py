@@ -1,7 +1,7 @@
 # Basics of Python
 
-'''
 # While loop and conditions
+'''
 secret_word = "rojo"
 guess = ""
 guess_count = 0
@@ -21,15 +21,15 @@ else:
     print("You win!")
 '''
 
-'''
 # Read an array
+'''
 office_workers = ["Jim", "Kevin", "Pam", "Dwight"]
 for name in office_workers:
     print(name)
 '''
 
-'''
 # Example of function with parameters and return
+'''
 def raiseToPower(base_num, pow_num):
     result = 1.0
     for i in range(pow_num):
@@ -44,8 +44,8 @@ result = raiseToPower(base, pow)
 print(result)
 '''
 
-'''
 # Example of cycle on grid
+'''
 number_grid = [
     [1, 2, 3],
     [4, 5, 6],
@@ -58,8 +58,8 @@ for row in number_grid:
         print(column)
 '''
 
-'''
 # Practice for loops with conditions
+'''
 def translate(phrase):
     translation = ""
 
@@ -77,16 +77,17 @@ def translate(phrase):
 print(translate(input("Enter a phrase: ")))
 '''
 
-'''
 # Except to specific errors ALWAYS
+'''
 try:
     number = int(input("Enter a number: "))
     print(number)
 except ValueError as err:
     print(err)
 '''
-'''
+
 # Reading from a file
+'''
 employee_file = open("employees.txt", "r")
 
 for employee in employee_file.readlines():
@@ -94,21 +95,23 @@ for employee in employee_file.readlines():
 
 employee_file.close()
 '''
-'''
+
 # Writing and appending on files
+'''
 employee_file = open("index.html", "w")
 employee_file.write("<p>This is a paragraph</p>")
 employee_file.close()
 '''
-'''
+
 # Creating and importing a module
+'''
 import useful_tools-
 
 print(useful_tools.rollDice(6))
 '''
 
-'''
 # Classes
+'''
 from Student import Student
 
 var = Student("Rodrigo", "LMAD", 3.1, True)
@@ -117,8 +120,8 @@ var2 = Student("Cecy", "LMAD", 2.1, False)
 print(var)
 '''
 
-'''
 # example of class
+'''
 from Question import Question
 
 question_prompts = [
@@ -143,4 +146,22 @@ def runTest(questions):
 
 runTest(questions)
 '''
-# Video left on 04:08:29
+
+# Functions on Objects
+'''
+from Student import Student
+
+student1 = Student("Rodrigo", "LMAD", 3.1)
+student2 = Student("Jarmon", "LA", 3.5)
+
+print(student1.onHonorRoll())
+'''
+
+# Herencia
+'''
+from MexicanChef import MexicanChef
+
+myChef = MexicanChef()
+myChef.makeSpecialDish()
+myChef.makeTaco()
+'''
