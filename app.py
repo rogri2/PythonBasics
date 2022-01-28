@@ -105,7 +105,7 @@ employee_file.close()
 
 # Creating and importing a module
 '''
-import useful_tools-
+import useful_tools
 
 print(useful_tools.rollDice(6))
 '''
